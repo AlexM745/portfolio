@@ -3,6 +3,7 @@ Portfolio website with an about me section, projects section and contact section
 
 # Website link
 
+alexm745.github.io/portfolio/
 
 # Outcome
 
