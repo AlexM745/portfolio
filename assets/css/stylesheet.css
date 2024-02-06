@@ -154,6 +154,10 @@ img {
     width: 700px;
     height: 150px;
 }
+.flex-item:hover{
+    opacity: .5;
+    background-color: whitesmoke;
+}
 
 /* Project images */
 .web {
