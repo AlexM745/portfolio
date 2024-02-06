@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;    
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #383838;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 50px;
+    color:#383838;
+    padding: 0 2% 0 3%;
+    box-sizing: border-box;
+    background-color: #09bb7f;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 28px;
+}
+
+nav li a {
+    padding:5px 10px; 
+    text-decoration: none;
+    color: #09bb7f;
+    border-bottom: 2px solid;
+    border-color: #09bb7f;
+    
+}
+
+nav li a:hover{
+    opacity: .5;
+    background-color: whitesmoke;
+    
+}
+
+
+/* Hero Banner image */
+figure {
+    position: relative;  
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top 30px bottom .5px right .5px ;
+    background-attachment: fixed;
+    height: 284px;
+
+    
+ }
+/* main section */
+main {
+    max-width: 90%;
+    margin-left: 11px;
+    margin-right: 50px;
+    display: grid;
+ }
+
+ section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+ }
+ section h2{
+    flex: 0 15%;
+    text-align: right;
+    font-size: 40px;
+    border-right: 6px solid;
+    padding-right: 10px;
+    border-color: #09bb7f; 
+}
+
+/* About me paragraph  */
+  article {
+    flex: 0 0 77%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items:end;
+    font-size: 20px;
+    
+ }
+
+img {
+    width: 22%;
+    height: fit-content;
+    margin: 1% 2% 2% 0;
+    float: left;
+    border-radius: 10%;
+    display: block;
+}
+    
+
+/* Projects section */
+
+.flex-container {
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    position:relative;
+    flex-basis: 703px;
+}
+
+.flex-item{ 
+    border: 5px solid;
+    border-color: #09bb7f;
+    color:black;
+    max-height: 110px;
+    min-height: 110px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 2%;
+    text-decoration: none;
+    background-size: 100%;
+    filter: brightness(.90);
+}
+
+.flex-item h3{
+    background-color: rgb(73, 218, 181);
+    opacity: .85;
+    color: aliceblue;
+}
+
+.flex-item:first-child {
+    width: 700px;
+    height: 150px;
+}
+
+/* Project images */
+.web {
+    background-image: url(../images/website-accessibility.png);
+    background-repeat: no-repeat;
+}
+.coming-soon{
+    background-image:url(../images/coming-soon.png);
+    background-repeat: no-repeat;
+}
+
+
+/* Contact adress*/
+
+address{
+    height: 150px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+}
+
+address a {
+    margin:5px;
+    padding: 10px 20px; 
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid;
+    border-color: #09bb7f;
+}
+
+address a:hover{
+    opacity: .75;
+    background-color: rgb(73, 218, 181);
+}
+
+
+
+/*media query */
+/* Screen adjustment for smaller screens */
+@media screen and (max-width:768px) {
+    
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .figure {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+}
+  
+
+/* screen adjustment for larger screens */
+@media screen and (max-width:992px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 50px;
+      }
+    
+      header nav {
+        justify-content: center;
+      }
+    
+      section h2,
+      section div {
+        flex: 0 0 100%;
+      }
+    
+      section h2 {
+        border-right: none;
+        border-bottom: 4px solid;
+        border-color: #09bb7f;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 35px;
+      }
+    
+}
