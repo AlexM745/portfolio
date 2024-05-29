@@ -160,8 +160,16 @@ img {
 }
 
 /* Project images */
-.web {
+.quiz {
     background-image: url(../images/website-accessibility.png);
+    background-repeat: no-repeat;
+}
+.roadster {
+    background-image: url(../images/Roadster.png);
+    background-repeat: no-repeat;
+}
+.retrobox {
+    background-image: url(../images/RetroBox.png);
     background-repeat: no-repeat;
 }
 .coming-soon{
